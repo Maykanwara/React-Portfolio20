@@ -1,4 +1,4 @@
-# React-Portfolio
+# React-Portfolio20
 
 ## Description
 
@@ -17,11 +17,11 @@ This is my React-Portfolio.
 
 ## Link to GitHub main project page
 
-[Portfolio Project Page on GitHub](https://github.com/Maykanwara/React-Portfolio)
+[Portfolio Project Page on GitHub](https://github.com/Maykanwara/React-Portfolio20)
 
 ## Link to Deployed Application
 
-[Live Deployment Link]()
+[Live Deployment Link](https://maykanwara.github.io/React-Portfolio20/)
 
 
 Github: [Maykanwara](https://github.com/Maykanwara)
