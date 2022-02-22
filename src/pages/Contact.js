@@ -2,16 +2,18 @@ import React from 'react'
 import '../App.css';
 import { Link } from "react-router-dom"
 import { Container } from 'react-materialize'
-import Header from '../components/Header'
-import Footer from '../components/Footer'
+import Header from '../components/Header/Header'
+import Footer from '../components/Footer/Footer'
 
 const Contact = () => {
+
+
 
     return (
 
 
         <>
-        <Header />
+        
         <Container>
         <div id="contactMeDesc">
             Connect with me!!

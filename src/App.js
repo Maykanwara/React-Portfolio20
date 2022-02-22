@@ -1,8 +1,8 @@
-import './App.css';
-import { BrowserRouter as Router, Route } from  "react-router-dom";
-import React from 'react';
-import Header from './components/Header';
-import Contact from './pages/Contact';
+import "./App.css";
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import React, { useState } from "react";
+import Header from "./components/Header/Header.js";
+import Contact from "./pages/Contact";
 // import Header from './components/Header'
 // import Navigation from './Component/Navigation'
 // import Footer from "./components/Footer";
@@ -12,14 +12,16 @@ import Contact from './pages/Contact';
 // import Contact from "./components/Contact";
 
 function App() {
-    return (
-        <Router>
-            <div className="App">
-            <Header/>
-            <Contact/>
-            </div>
-        </Router>
-    );
+  const [page, setPage] = useState("about");
+
+  return (
+    <Router>
+      <div className="App">
+        <Header setPage={setPage} page={page} />
+        <Contact />
+      </div>
+    </Router>
+  );
 }
 
 export default App;
