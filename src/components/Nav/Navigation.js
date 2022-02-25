@@ -1,15 +1,17 @@
 import React from "react";
 import "./style.css";
 
-const Navigation = (props) => {
-  console.log(props)
+const Navigation = ({ setPage }) => {
+  const handleClick = (e) => {
+    setPage(e.target.textContent);
+  };
   return (
     <nav>
-      <a href="/about">About Me</a>
+      <span onClick={handleClick}>About Me</span>
 
-      <a href="/work">Work</a>
-      <a href="/contact">Contact Me</a>
-      <a href="/resume">Resume</a>
+      <span onClick={handleClick}>Work</span>
+      <span onClick={handleClick}>Contact</span>
+      <span onClick={handleClick}>Resume</span>
     </nav>
   );
 };

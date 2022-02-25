@@ -13,11 +13,26 @@ import Contact from "./pages/Contact";
 
 function App() {
   const [page, setPage] = useState("about");
-
+console.log(page)
+const renderPage = () => {
+    if (page === "About Me") {
+        return "Hello World"
+    }
+    if (page === "Work") {
+        return "Work"
+    }
+    if (page === "Contact") {
+        return "Contact"
+    }
+    if (page === "Resume") {
+        return "My Resume"
+    }
+}
   return (
     <Router>
       <div className="App">
         <Header setPage={setPage} page={page} />
+        {renderPage()} 
         <Contact />
       </div>
     </Router>

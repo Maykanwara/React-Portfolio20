@@ -1,10 +1,10 @@
 nav {
-    padding-right: .5em;
-
-
+  padding-right: 0.5em;
 }
-nav a {
-    padding-right: .5em;
+nav span {
+  padding-right: 0.5em;
+}
+nav span:hover {
+    cursor: pointer;
     
-
 }
